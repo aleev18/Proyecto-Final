@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muule Studio - Portafolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Muule Studio</div>
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotras">Nosotras</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-right">
+      <div id="reloj"></div>
+
+      <button id="modo-btn">
+        <img id="icono-modo" src="img/sol.png" alt="Modo">
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="hero fade-up">
+      <h1>Transformamos ideas en experiencias digitales</h1>
+
+      <p>
+        Somos Alejandra y Mariannys, creadoras de Muule Studio.
+        Diseñamos páginas web, portafolios y proyectos digitales modernos,
+        combinando creatividad, diseño y funcionalidad.
+      </p>
+    </section>
+
+    <section id="nosotras" class="section fade-up">
+      <h2>Sobre Nosotras</h2>
+
+      <p>
+        Muule Studio nace como una propuesta de diseño web enfocada en crear
+        experiencias visuales elegantes y modernas. Nuestro objetivo es desarrollar
+        páginas atractivas, intuitivas y adaptables a cualquier dispositivo.
+      </p>
+
+      <div class="grid-nosotras">
+
+        <div class="card zoomable">
+          <img src="img/chica1.jpg" alt="Alejandra - Fundadora de Muule Studio" loading="lazy">
+        </div>
+
+        <div class="card zoomable">
+          <img src="img/chica2.jpg" alt="Mariannys - Fundadora de Muule Studio" loading="lazy">
+        </div>
+
+      </div>
+    </section>
+
+    <section id="proyectos" class="section fade-up">
+      <h2>Proyectos</h2>
+
+      <div class="grid-proyectos">
+
+        <div class="card zoomable">
+          <img src="img/proyecto1.jpg" alt="Proyecto 1" loading="lazy">
+        </div>
+
+        <div class="card zoomable">
+          <img src="img/proyecto2.jpg" alt="Proyecto 2" loading="lazy">
+        </div>
+
+        <div class="card zoomable">
+          <img src="img/proyecto3.jpg" alt="Proyecto 3" loading="lazy">
+        </div>
+
+        <div class="card zoomable">
+          <img src="img/proyecto4.jpg" alt="Proyecto 4" loading="lazy">
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contacto" class="section fade-up">
+      <h2>Contacto</h2>
+
+      <form action="gracias.html">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo" required>
+        <textarea placeholder="Escribe tu mensaje" required></textarea>
+
+        <button type="submit" class="btn-principal">Enviar mensaje</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Zoom -->
+  <div id="modal-img" class="modal-img">
+    <span class="cerrar-modal">&times;</span>
+    <img id="img-ampliada" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
